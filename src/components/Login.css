@@ -1,0 +1,68 @@
+#login-container{
+    background-color:rgba(255, 255, 255, 0.8);
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: #0e0eeca6 0px 0px 30px;
+}
+
+#login-brand{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+#login-brand div {
+    padding: 30px;
+}
+
+#login-brand div h1{
+    padding-left: 20px;
+    color: darkblue;
+
+}
+#login-brand div h3{
+    color: rgb(85, 83, 83);
+}
+#login-form {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#login-form > div{
+    padding: 40px;
+    border-left: solid 2px lightgray (128,128,128,0.2);
+    height: 100%;
+}
+
+#login-form > div h2{
+     color: rgb(0,152,255);
+}
+
+#login-form  input{
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+    border:solid 1px rgb(10, 10, 10);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin: auto;
+}
+#login-form button{
+    width: 85%;
+    font-size: 16px;
+    background-color: rgb(105, 102, 102);
+    color: rgb(247, 247, 247);
+    padding: 10px;
+    border:solid 1px rgb(159, 216, 245);
+    border-radius: 25px;
+}
+.social-form-div{
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+

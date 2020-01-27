@@ -19,7 +19,7 @@ class Login extends Component {
         let member_pass = this.state.password;
 
         if(member_name !== '' && member_pass !==''){
-            let result = await axios.post('http://localhost/Rjsocialapi/member.php',{
+            let result = await axios.post('http://localhost:8080/rjsocialapi/member.php',{
             member_name: member_name,
             member_pass: member_pass,
             fn:'Login',
@@ -46,7 +46,7 @@ class Login extends Component {
                         <hr />
                         <form onSubmit={ this.loginSubmit }>
                         <div className="social-form-div">
-                            <input type="text" id="username"name="username" placeholderue="ชื่อผู้ใช้"
+                            <input type="text" id="username"name="username" placeholder="ชื่อผู้ใช้"
                             value = {this.state.username}
                             onChange={
                             this.username_onChange} />

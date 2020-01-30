@@ -24,8 +24,22 @@ class Login extends Component {
             member_pass: member_pass,
             fn:'Login',
             key:'RjSocialData'
-            });
-            console.log(result);
+            })
+            let result_data = result.data;
+            if(result_data.status == true){
+                if(result_data.login == true){
+                    let member = result_data.member;
+                    if(member.member_status == 'Admin'){
+                        window.location.replace('/Admin');
+                    }else{
+                        window.location.replace('/Member');
+                    }
+                }else{
+                    alert('ชื้อผู้ใช่หรือรหัสผ่าน ไม่ถูกต้อง');
+                }
+
+            }
+         
         }
         else{
             alert('กรุณากรอก ชื้อผู้ใช่ เเละ รหัสผ่าน');
